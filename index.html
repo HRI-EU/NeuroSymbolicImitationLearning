@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Neuro-Symbolic Imitation Learning: Discovering Symbolic Abstractions for Skill Learning">
+  <meta property="og:title" content="Neuro-Symbolic Imitation Learning"/>
+  <meta property="og:description" content="Neuro-Symbolic Imitation Learning: Discovering Symbolic Abstractions for Skill Learning"/>
+  <meta property="og:url" content="https://hri-eu.github.io/NeuroSymbolicImitationLearning"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/overview.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="600"/>
+
+
+  <meta name="twitter:title" content="Neuro-Symbolic Imitation Learning">
+  <meta name="twitter:description" content="Neuro-Symbolic Imitation Learning: Discovering Symbolic Abstractions for Skill Learning">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/overview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Neuro-Symbolic AI, Robot Learning, Imitation Learning, Abstraction Learning, Skill Learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Neuro-Symbolic Imitation Learning</title>
+  <link rel="icon" type="image/x-icon" href="static/images/asimo.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <img src="static/images/ICRA.png" alt="ICRA" class="blend-img-background center-image" style="max-width: 30%; height: auto;" />
+            <img src="static/images/ICRA_atlanta.png" alt="ICRA" class="blend-img-background center-image" style="max-width: 23%; height: auto;" />
+
+            <h1 class="title is-1 publication-title">Neuro-Symbolic Imitation Learning: Discovering Symbolic Abstractions <br> for Skill Learning</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://www.ias.informatik.tu-darmstadt.de/Team/LeonKeller" target="_blank">Leon Keller</a><sup>1,2</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.de/citations?user=1RcHr3MAAAAJ" target="_blank">Daniel Tanneberg</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://www.ias.informatik.tu-darmstadt.de/Team/JanPeters" target="_blank">Jan Peters</a><sup>1,3,4</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">
+                    <sup>1</sup>Intelligent Autonomous Systems, TU Darmstadt, Germany<br>
+                    <sup>2</sup>Honda Research Institute EU, Germany<br>
+                    <sup>3</sup>German Research Center for AI, Germany<br>
+                    <sup>4</sup>Hessian Centre for Artificial Intelligence, Germany</span>
+
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Imitation learning is a popular method for teaching robots new behaviors. However, most existing methods focus on teaching short, isolated skills rather than long, multi-step tasks. To bridge this gap, imitation learning algorithms must not only learn individual skills but also an abstract understanding of how to sequence these skills to perform extended tasks effectively. This paper addresses this challenge by proposing a neuro-symbolic imitation learning framework. Using task demonstrations, the system first learns a symbolic representation that abstracts the low-level state-action space. The learned representation decomposes a task into easier subtasks and allows the system to leverage symbolic planning to generate abstract plans. Subsequently, the system utilizes this task decomposition to learn a set of neural skills capable of refining abstract plans into actionable robot commands. Experimental results in three simulated robotic environments demonstrate that, compared to baselines, our neuro-symbolic approach increases data efficiency, improves generalization capabilities, and facilitates interpretability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Abstract -->
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Neuro-Symbolic Policies</h2>
+            <p>
+              <img src="static/images/policy_overview.svg" alt="Neuro Symbolic Policy" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+            </p>
+            <p>            
+              In our framework, policies have both symbolic and neural components. The symbolic components consist of predicates that abstract the state-space and operators that define a transition model in the abstract state-space induced by the predicates. Together, predicates and operators define a planning problem in the Planning Domain Definition Language (PDDL) and can be utilized to generate abstract plans. The neural components consist of skills that together enable the execution of abstract plans in the environment. To execute the policy on a given task, we first first abstract the low-level start and goal state using the predicates.  Following, an abstract plan is computed using the operators and off-the-shelve planning algorithms. Lastly, the corresponding skill sequence is executed.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Learning from Demonstrations</h2>
+            <p>
+              <img src="static/images/learning_overview.svg" alt="Learning from Demonstration" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+            </p>
+            <p>            
+              Our approach to learning neuro-symbolic policies is divided into two phases. In the first phase, we learn the symbolic components of the policy. To learn predicates, we first generate a set of candidate predicates based on features observed in the demonstrations. Subsequently, we select among these candidates by optimizing a novel objective function. Concurrently, operators are learned based on the symbolic transitions induced by the predicates. In the second phase, we utilize the identified symbolic abstraction to learn a distinct neural skill for every operator identified in the first phase. For that, we segment the demonstrations based on the learned symbolic representation and train the neural networks using behavior cloning.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Results</h2>
+            <p>
+              <img src="static/images/results.png" alt="Neuro Symbolic Policy" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+            </p>
+            <p>            
+              We compare our approach to two baselines and evaluate across three distinct generalization scenarios: Scenario I introduces initial object poses not seen during training. Scenario II additionally introduces unseen goals. Lastly, Scenario III introduces more objects than during training. With 300 training demonstrations, our method achieves a high success rate across all environments and generalization scenarios. Furthermore, it outperforms both baselines across all number of demonstrations, showcasing its data-efficiency. The result highlights a major advantage of the neuro-symbolic approach: Through the learned symbols, we can benefit from the generalization capabilities of symbolic planning.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="static/images/painting.gif" alt="Painting"/>
+      </div>
+      <div class="item">
+        <img src="static/images/kitchen.gif" alt="Kitchen"/>
+      </div>
+      <div class="item">
+        <img src="static/images/building.gif" alt="Building"/>
+     </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+<section class="section hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Learned Predicates and Operators</h2>
+            <p>
+              <img src="static/images/examples.svg" alt="Neuro Symbolic Policy" class="blend-img-background center-image" style="max-width: 100%; height: auto;" />
+            </p>
+            <p>            
+              We visualize learned predicates by overlaying images of states in which the predicate is true. These visualizations allow us to assign meaningful names to all predicates, making them easier to interpret. Once predicates are named, we can interpret the preconditions and effects of each operator and assign meaningful names to them as well. With all symbols named, the abstract plans generated by the policy become fully interpretable.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{keller2025,
+      author = {Keller, Leon and Tanneberg, Daniel and Peters, Jan},
+      title = {Neuro-Symbolic Imitation Learning: Discovering Symbolic Abstractions for Skill Learning},
+      booktitle={IEEE International Conference on Robotics and Automation (ICRA)}
+      year = {2025}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
